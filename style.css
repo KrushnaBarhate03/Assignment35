@@ -1,0 +1,39 @@
+
+      .main-container {
+        position: relative;
+        width: fit-content;
+        margin: 50px auto;
+    } 
+      #slide-image {
+        height: 300px;
+        width: 500px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .icon-action {
+        position: absolute;
+        height: 50px;
+        top: 40%;
+        cursor: pointer;
+        transition: 0.5s;
+       
+      }
+
+      .icon-left {
+        left: 0;
+      }
+
+      .icon-left:hover {
+        transform: scale(0.9) translateX(-10px);
+        padding:8px;
+      }
+
+      .icon-right {
+        right: 0;
+      }
+
+      .icon-right:hover {
+        transform: scale(0.9) translateX(10px);
+        padding:8px;
+      }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 35</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <div class="main-container">
+      <img src="images/Rocket2.jfif"  id="slide-image" />
+      <img src="images/left.png" class="icon-action icon-left" onclick="previouspic()" />
+      <img src="images/right.png" class="icon-action icon-right" onclick="nextpic()" />
+    </div>
+
+    <script>
+      const images = ["images/Rocket2.jfif","images/Rocket1.jfif","images/Rocket3.jfif","images/Rocket4.jfif"];
+      let index = 0;
+      const slideshow = document.getElementById("slide-image");
+
+      function nextpic() {
+        if (index < images.length - 1) {
+          index++;
+        } else {
+          index = 0;
+        }
+
+        slideshow.src = images[index];
+      }
+
+      function previouspic() {
+        if (index > 0) {
+          index--;
+        } else {
+          index = images.length - 1;
+        }
+
+        slideshow.src = images[index];
+      }
+    </script>
+  </body>
+</html>
