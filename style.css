@@ -5,8 +5,8 @@
         margin: 50px auto;
     } 
       #slide-image {
-        height: 300px;
-        width: 500px;
+        height: 400px;
+        width: 600px;
         object-fit: cover;
         border-radius: 8px;
       }
